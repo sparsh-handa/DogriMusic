@@ -111,6 +111,14 @@ function AddEditSong() {
     }
   };
 
+  useEffect(() => {
+    if (user) {
+      if ((user?.isAdmin && !user.isAdmin) || !user?.isAdmin) {
+        navigate("/home");
+      }
+    }
+  }, [user]);
+
   return (
     <div>
       <div className="flex items-center gap-5">
