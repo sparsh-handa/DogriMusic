@@ -13,24 +13,6 @@ function DefaultLayout({ children }) {
   })
   // const [btnText,setbtnText] = useState("Enable Dark Mode")
 
-  const toggleStyle = ()=>{
-    if(myStyle.color === 'black'){
-      setmyStyle({
-        color : 'white',
-        backgroundColor : 'black'
-      })
-      // setbtnText("Enable Light Mode")
-    }
-    else{
-      setmyStyle({
-        color : 'black',
-        backgroundColor : 'white'
-      })
-      // setbtnText("Enable Dark Mode")
-
-    }
-  }
-  
   const navigate = useNavigate();
   return (
     <div className="main" style={myStyle}>
