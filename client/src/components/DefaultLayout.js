@@ -6,16 +6,16 @@ function DefaultLayout({ children }) {
   const { user } = useSelector((state) => state.user);
   // const toggle_btn = document.querySelector("#checkbox");
 
-  const[myStyle,setmyStyle] =useState({
-    color : 'black',
-        backgroundColor : 'white'
+  // const[myStyle,] =useState({
+  //   color : 'black',
+  //       backgroundColor : 'white'
 
-  })
+  // })
   // const [btnText,setbtnText] = useState("Enable Dark Mode")
 
   const navigate = useNavigate();
   return (
-    <div className="main" style={myStyle}>
+    <div className="main" >
       <div className="header flex justify-between shadow p-5 items-center">
         <h1
           className="text-3xl ml-7 font-bold cursor-pointer"
@@ -66,9 +66,9 @@ function DefaultLayout({ children }) {
               <div className="container">
               
               </div> */}
-              <i className="ri-sun-fill text-4xl" style={myStyle} onClick={toggleStyle}>
+              {/* <i className="ri-sun-fill text-4xl" style={myStyle}>
             
-              </i>
+              </i> */}
 
 
 
